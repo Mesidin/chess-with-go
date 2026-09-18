@@ -122,6 +122,16 @@ func (g *Game) Over() bool                      { return g.result != InProgress 
 func (g *Game) FullMove() int                   { return g.full }
 func (g *Game) Moves() []Move                   { return append([]Move(nil), g.history...) }
 
+func (g *Game) Clone() *Game {
+	cp := *g
+	cp.history = append([]Move(nil), g.history...)
+	return &cp
+}
+
+func (g *Game) PlayMove(m Move) error {
+	return g.Play(m.From, m.To, m.Promo)
+}
+
 func (g *Game) Play(from, to int, promo Kind) error {
 	if g.Over() {
 		return ErrGameOver
