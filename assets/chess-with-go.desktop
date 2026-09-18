@@ -3,6 +3,6 @@ Type=Application
 Name=Chess with Go
 Comment=Gothic Chess game with custom engine and lessons
 Exec=chess-with-go
-Icon=applications-games
+Icon=chess-with-go
 Terminal=false
 Categories=Game;BoardGame;
