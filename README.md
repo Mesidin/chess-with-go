@@ -34,6 +34,16 @@ go run ./cmd/chess-with-go
 
 On Omarchy the window uses X11 (XWayland). If it does not open: `sudo pacman -S go libx11 libglvnd mesa`.
 
+To put it in the **Mac Dock**, on the Mac from the repo root:
+
+```
+sh scripts/macos-app.sh
+cp -R "Chess with Go.app" /Applications/
+open /Applications
+```
+
+Drag **Chess with Go** onto the Dock. The first time, right-click the app and choose Open if Gatekeeper warns. A `.app` in `/Applications` is what the Dock expects; a raw binary works but looks like a generic Unix tool.
+
 **Start game** picks Humans, White vs bot, or Black vs bot. Click a piece, then a highlighted square. **U** undo (vs the bot, your move and the reply). Promotion is to queen for now.
 
 **Learn to play** walks through pawns, knights, bishops, capture, check, castling, and mate. Highlighted squares are the ones to use.

@@ -23,6 +23,8 @@ go run ./cmd/chess-with-go
 
 On Windows PowerShell use `.\cmd\chess-with-go`. Do not kill a running window to rebuild unless the user asks.
 
+macOS Dock: `sh scripts/macos-app.sh` then copy `Chess with Go.app` to `/Applications` and drag it to the Dock. Run that script on a Mac.
+
 ## Omarchy theming
 
 Menus, HUD, and buttons follow the **active Omarchy theme**. The chessboard and piece colors are a separate **board skin** (Classic, Forest, Harbor, Gold rush, Ocean, Neon) chosen in **Board skins**. Do not drive square or piece colors from Omarchy.
